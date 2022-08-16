@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <!-- action="" attribute it specifies WHERE the DATA should be sent and when the form is submitted -->
+    <form action="/nami">
+      <p class="username-input">
+        <label for="username">Enter a Username: </label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </p>
+      <p class="password-input">
+        <label for="password">Enter a Password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Enter a Color: </label>
+        <input id="color" type="color" name="color" />
+      </p>
+      <p>
+        <label for="number">Enter a Number: </label>
+        <input
+          id="number"
+          type="number"
+          placeholder="enter a number"
+          name="number"
+        />
+      </p>
+      <!-- This button does'nt submit the form b/c of the "type" attribute -->
+      <button type="button">Regular button (won't submit)</button>
+      <!-- This button submits the form -->
+      <button>Submit!!!</button>
+      <!-- So does this one -->
+      <input type="submit" value="Click Me!" />
+    </form>
+    <hr />
+    <!-- Outside of a form, no default behavior -->
+    <button>Not Inside Form</button>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search" target="_blank">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results" target="_blank">
+      <input type="text" name="search_query" />
+      <button>Search YouTube</button>
+    </form>
+    <h3>Search Pinterest</h3>
+    <form action="https://id.pinterest.com/search/pins" target="_blank">
+      <input type="text" name="q" />
+      <button>Search Pinterest</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/kucing">
+      <input type="checkbox" name="'agree_tos" id="agree" />
+      <label for="agree">I Agree to Everything</label>
+      <p>
+        <label for="S">S</label>
+        <input type="radio" id="S" name="size" value="S" />
+        <label for="M">M</label>
+        <input type="radio" id="M" name="size" value="M" />
+        <label for="XL">XL</label>
+        <input type="radio" id="XL" name="size" value="XL" />
+      </p>
+      <p>
+        <label for="meal">Please Select an Entree</label>
+        <select name="meal" id="meal">
+          <option value="">--Choose an option--</option>
+          <option value="chicken">Chicken</option>
+          <option value="fish">Fish</option>
+          <option value="donut">Donut</option>
+        </select>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
