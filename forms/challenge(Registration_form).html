@@ -4,32 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Marathon Registration Form</title>
+    <title>Registration Form</title>
   </head>
   <body>
     <h1>Race Registration</h1>
     <form action="/marathon">
       <p>
         <label for="first">First Name</label>
-        <input type="text" id="first" name="first" required />
+        <input type="text" id="first" name="firstname" required />
         <br />
         <label for="last">Last Name</label>
-        <input type="text" id="last" name="last" required />
+        <input type="text" id="last" name="lastname" required />
       </p>
       <div>
-        <label for="race">Select a Race: </label>
+        <p>Select a Race:</p>
         <div>
-          <input type="radio" name="race" id="race" value="Fun Run 5K" />
-          <label for="race">Fun Run 5K</label>
+          <input type="radio" name="race" id="funrun" value="FunRun" />
+          <label for="funrun">Fun Run 5K</label>
           <br />
-          <input type="radio" name="race" id="race" value="Half Marathon" />
-          <label for="race">Half Marathon</label>
+          <input type="radio" name="race" id="half" value="HalfMarathon" />
+          <label for="half">Half Marathon</label>
           <br />
-          <input type="radio" name="race" id="race" value="Full Marathon" />
-          <label for="race">Full Marathon</label>
+          <input type="radio" name="race" id="full" value="FullMarathon" />
+          <label for="full">Full Marathon</label>
         </div>
       </div>
-
       <div>
         <label for="email">Email: </label>
         <input type="email" id="email" name="email" required />
@@ -45,12 +44,12 @@
         />
       </div>
       <div>
-        <label for="age">Select Age Group</label>
-        <select name="age" id="age">
-          <option value="under-18">Under 18</option>
-          <option value="18-30">18-30</option>
-          <option value="30-50">30-50</option>
-          <option value="50+">50+</option>
+        <label for="division">Select Age Group</label>
+        <select name="division" id="division">
+          <option value="kids">Under 18</option>
+          <option value="young-adult">18-30</option>
+          <option value="adults">30-50</option>
+          <option value="seniors">50+</option>
         </select>
       </div>
       <button><b>Register!</b></button>
