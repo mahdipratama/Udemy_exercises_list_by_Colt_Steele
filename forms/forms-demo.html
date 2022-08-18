@@ -41,7 +41,7 @@
           name="number"
         />
       </p>
-      <!-- This button does'nt submit the form b/c of the "type" attribute -->
+      <!-- This button doesn't submit the form b/c of the "type" attribute -->
       <button type="button">Regular button (won't submit)</button>
       <!-- This button submits the form -->
       <button>Submit!!!</button>
@@ -89,6 +89,27 @@
           <option value="donut">Donut</option>
         </select>
       </p>
+      <p>
+        <label for="momo">Amount of Momo: </label>
+        <input
+          type="range"
+          id="momo"
+          min="1"
+          max="100"
+          value="10"
+          name="momo_level"
+        />
+      </p>
+      <label for="requests">Any Special Requests?</label>
+      <br />
+      <textarea
+        name="requests?"
+        id="requests"
+        cols="30"
+        rows="10"
+        placeholder="Type something here"
+      ></textarea>
+      <br />
       <button>Submit</button>
     </form>
   </body>
