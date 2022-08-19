@@ -1,0 +1,17 @@
+h1 {
+  color: green;
+}
+
+h2 {
+  color: #ff02ff;
+}
+
+p {
+  color: white;
+  background-color: black;
+}
+
+button {
+  color: #ff5e67;
+  background-color: pink;
+}
