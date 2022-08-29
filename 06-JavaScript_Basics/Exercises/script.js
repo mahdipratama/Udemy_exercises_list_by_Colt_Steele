@@ -23,5 +23,20 @@ function getColor(phrase) {
     console.log('green');
   } else console.log('purple');
 }
-
 getColor('slow'); // yellow
+
+
+// Exercise #3
+const num = 102;
+
+if (num <= 100) {
+  if (num >= 50) {
+    console.log("HEY!");
+  }
+} else {
+  if (num < 103) {
+    if (num % 2 === 0) {
+      console.log("YOU GOT ME!");
+    }
+  }
+}
