@@ -40,3 +40,13 @@ if (num <= 100) {
     }
   }
 }
+
+
+// Exercise #4 
+const mystery = 'Pilates7';
+
+if (mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1) {
+  console.log("YOU GOT IT!!!");
+}
+
+console.log()
