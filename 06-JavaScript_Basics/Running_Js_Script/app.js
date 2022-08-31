@@ -128,3 +128,11 @@ switch (day) {
   default:
     console.log('I Don\'t know that');
 }
+
+// Object Literals 
+const kitchenSink = {
+  faveNum: 09380,
+  isFunny: true,
+  colors: ['red', 'orange']
+}
+
