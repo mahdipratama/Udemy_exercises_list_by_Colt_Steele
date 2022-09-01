@@ -144,3 +144,15 @@ const restaurant = {
 
 //YOUR CODE GOES DOWN HERE:
 let fullAddress = `${restaurant['address']}, ${restaurant['city']}, ${restaurant['state']} ${restaurant['zipcode']}`;
+
+
+
+//////////////////////////////////
+// Loops Exercise 
+
+// Exercise #1 
+// Print out "Da ba dee da ba daa" 6 times, using a for loop
+let times = 6;
+for (let i = 1; i <= times; i++) {
+  console.log('Da ba dee da ba daa')
+}
