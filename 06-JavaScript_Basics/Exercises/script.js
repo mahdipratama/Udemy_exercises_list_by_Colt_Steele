@@ -168,3 +168,12 @@ for (let i = 1; i <= times; i++) {
 for (let i = 25; i >= 0; i -= 5) {
   console.log(i)
 }
+
+// Exercise 3
+// Loop over the people array with a for loop, printing out each name in uppercase letters.
+
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i].toUpperCase())
+}
