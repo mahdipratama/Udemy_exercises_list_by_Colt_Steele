@@ -245,3 +245,29 @@ for (let row of seatingChart) {
     console.log(student);
   }
 }
+
+
+// Iterating Over Object
+const testScores = {
+  Keenan: 80,
+  Damon: 67,
+  Kim: 89,
+  Shawn: 91,
+  Marlon: 72,
+  Dwayne: 77,
+  Nadia: 83,
+  Elvira: 97,
+  Diedre: 81,
+  Vonnie: 60
+}
+
+// for (let person in testScores) {
+//   console.log(`${person} scored ${testScores[person]}`)
+// };
+
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+  total += score;
+}
+console.log(total / scores.length);
