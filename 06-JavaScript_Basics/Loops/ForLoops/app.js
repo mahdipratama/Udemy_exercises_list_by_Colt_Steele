@@ -205,3 +205,9 @@
 //   alert('CONGRATS YOU WIN!')
 //   alert(`YOU GOT IT ! it took you ${attempts} guesses`);
 // }
+
+
+
+// ===================================
+// WHILE LOOP
+// ===================================
