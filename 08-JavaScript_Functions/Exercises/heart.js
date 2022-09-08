@@ -28,3 +28,25 @@ function rant(message) {
   console.log(message.toUpperCase())
 }
 rant('I HATE BEETS');
+
+
+
+/*
+Multiple Args Exercise
+=======================
+Please write a function called isSnakeEyes, which accepts two numbers as inputs, representing two dice.  If the two numbers are both 1's, please print "Snake Eyes!" otherwise print "Not Snake Eyes!"
+
+-isSnakeEyes(1,1) //Snake Eyes!
+-isSnakeEyes(1,5) //Not Snake Eyes!
+-isSnakeEyes(4,5) //Not Snake Eyes!
+*/
+
+function isSnakeEyes(snake, eyes) {
+  if (snake === 1 && eyes === 1) {
+    return ('Snake Eyes!')
+  } else {
+    return ('Not Snake Eyes!')
+  }
+}
+
+console.log(isSnakeEyes(1, 1)); // Snake Eyes!
