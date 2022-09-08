@@ -71,3 +71,31 @@ multiply(9, 9);
 multiply(5, 4);
 
 
+/*
+isShortsWeather Function
+=======================
+Decide by writing me a function called isShortsWeather. 
+
+It should accept a single number argument, which we will call temperature(but you can name it whatever you want, of course). 
+
+If temperature is greater than or equal to 75, return true. 
+
+Otherwise, return false.   
+
+This exercise assumes temperature is in Fahrenheit.  I apologize to all my Celsius-using students!
+
+isShortsWeather(80) //true
+isShortsWeather(48) //false
+isShortsWeather(75) //true
+*/
+
+function isShortsWeather(temperature) {
+  if (temperature >= 75) {
+    return true;
+  } else {
+    return false;
+  }
+}
+isShortsWeather(80)
+isShortsWeather(48)
+isShortsWeather(75)
