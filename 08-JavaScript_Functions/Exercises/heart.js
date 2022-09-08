@@ -50,3 +50,24 @@ function isSnakeEyes(snake, eyes) {
 }
 
 console.log(isSnakeEyes(1, 1)); // Snake Eyes!
+
+
+
+/*
+Return Value Practice
+=======================
+Write a simple function multiply which accepts two numerical arguments and returns their product (multiply them together).  Make sure to return the value instead of printing it!
+
+multiply(2,3) // 6
+multiply(9,9) // 81
+multiply(5,4) // 20
+*/
+
+function multiply(x, y) {
+  return x * y
+}
+multiply(2, 3);
+multiply(9, 9);
+multiply(5, 4);
+
+
