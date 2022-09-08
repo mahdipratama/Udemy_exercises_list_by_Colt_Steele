@@ -120,3 +120,21 @@ function lastElement(array) {
 lastElement([3, 5, 7]) //7
 lastElement([1]) //1
 lastElement([]) //null
+
+
+/*
+Last Element Exercise
+=======================
+Define a function called capitalize that accepts a string argument and returns a new string with the first letter capitalized (but the rest of the string unchanged).  For example:
+
+-capitalize('eggplant') // "Eggplant"
+-capitalize('pamplemousse') // "Pamplemousse"
+-capitalize('squid') //"Squid"
+*/
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(capitalize('eggplant')) // "Eggplant"
+console.log(capitalize('pamplemousse')) // "Pamplemousse"
+console.log(capitalize('squid')) //"Squid"
