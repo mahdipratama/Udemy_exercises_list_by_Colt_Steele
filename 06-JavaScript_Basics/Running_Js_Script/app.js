@@ -122,6 +122,8 @@ switch (day) {
     console.log('Friday');
     break;
   case 6:
+    console.log('Satuday');
+    break;
   case 7:
     console.log('Monday');
     break;
