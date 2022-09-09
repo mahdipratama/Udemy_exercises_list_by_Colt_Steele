@@ -138,3 +138,26 @@ function capitalize(str) {
 console.log(capitalize('eggplant')) // "Eggplant"
 console.log(capitalize('pamplemousse')) // "Pamplemousse"
 console.log(capitalize('squid')) //"Squid"
+
+
+
+/*
+Sum Array Exercise
+=======================
+Write a function called sumArray which accepts a single argument: an array of numbers.  It should return the sum of all the numbers in the array.
+
+sumArray([1,2,3]) // 6
+sumArray([2,2,2,2]) // 8
+sumArray([50,50,1]) // 101
+*/
+
+function sumArray(arr) {
+  let sum = 0
+  for (const value of arr) {
+    sum += value
+  }
+  return sum
+}
+
+const total = sumArray([50, 50, 1]);
+console.log(total);
