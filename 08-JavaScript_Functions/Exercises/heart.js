@@ -205,3 +205,19 @@ function returnDay(day) {
 
 let whichDay = returnDay(1);
 console.log(whichDay);
+
+
+/*
+Function Expression Exercise
+=======================
+Define a function that returns the square of a number. Define the function as a function expression, stored in a variable called square.  NOTE: Udemy's coding exercise platform does NOT support the ** operator. 
+
+-square(4) //16
+-square(3) //9
+*/
+const square = function (num) {
+  return num * num;
+};
+const sum1 = square(4);
+const sum2 = square(6);
+console.log(sum1, sum2)
