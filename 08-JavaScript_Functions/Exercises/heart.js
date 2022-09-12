@@ -247,3 +247,38 @@ const square = {
 
 console.log(square.area(10)); //100
 console.log(square.perimeter(10)); //40
+
+
+/*
+Egg Laying Exercise
+=======================
+Egg Laying Exercise
+Define an object called hen.  It should have three properties:
+
+name should be set to 'Helen'
+
+eggCount should be set to 0
+
+layAnEgg should be a method which increments the value of eggCount by 1 and returns the string "EGG".  You'll need to use this.
+
+-hen.name // "Helen"
+-hen.eggCount // 0
+-hen.layAnEgg() // "EGG"
+-hen.layAnEgg() // "EGG"
+-hen.eggCount // 2
+*/
+
+const hen = {
+  name: 'Helen',
+  eggCount: 0,
+  layAnEgg () {
+    this.eggCount++
+    return 'EGG'
+  }
+}
+
+console.log(hen.eggCount);
+console.log(hen.layAnEgg());
+console.log(hen.layAnEgg());
+console.log(hen.layAnEgg());
+console.log(hen.eggCount);
