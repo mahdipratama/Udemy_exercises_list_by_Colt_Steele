@@ -215,9 +215,35 @@ Define a function that returns the square of a number. Define the function as a 
 -square(4) //16
 -square(3) //9
 */
-const square = function (num) {
+const kubus = function (num) {
   return num * num;
 };
-const sum1 = square(4);
-const sum2 = square(6);
+const sum1 = kubus(4);
+const sum2 = kubus(6);
 console.log(sum1, sum2)
+
+
+/*
+Methods Exercise
+=======================
+Define an object called square, which will hold methods that have to do with the geometry of squares. It should contain two methods, area and perimeter 
+
+area should accept the length of a side (all sides are the same in a square) and then return the side squared. 
+
+perimeter should accept the length of a side and return that side multiplied by 4.
+
+-square.area(10) //100
+-square.perimeter(10) //40
+*/
+
+const square = {
+  area(side) {
+    return side * side
+  },
+  perimeter(side) {
+    return side * 4
+  }
+}
+
+console.log(square.area(10)); //100
+console.log(square.perimeter(10)); //40
