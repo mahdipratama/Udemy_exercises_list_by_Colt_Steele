@@ -82,3 +82,15 @@ const movies = [
 movies.forEach(function (movie) {
   console.log(`${movie.title} - ${movie.score}/100`)
 })
+
+
+// The Map Method 
+const doubles = numbers.map(function (num) {
+  return num * 2;
+})
+console.log(doubles);
+
+const titles = movies.map(function (movie) {
+  return movie.title.toUpperCase();
+})
+console.log(titles);
