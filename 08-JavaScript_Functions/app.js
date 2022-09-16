@@ -94,3 +94,17 @@ const titles = movies.map(function (movie) {
   return movie.title.toUpperCase();
 })
 console.log(titles);
+
+
+// Arrow Function 
+const add = (x, y) => {
+  return x + y;
+}
+
+const square = (num) => {
+  return num * num;
+}
+
+const rollDice = () => {
+  return Math.floor(Math.random() * 6);
+}
