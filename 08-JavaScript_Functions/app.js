@@ -96,6 +96,14 @@ const titles = movies.map(function (movie) {
 console.log(titles);
 
 
+// Arrow Function Wrap up
+const movieRate = movies.map(movie => (
+  console.log(`${movie.title} - ${movie.score}/100`)
+));
+
+console.log(movieRate);
+
+
 // Arrow Function 
 const add = (x, y) => {
   return x + y;
@@ -116,3 +124,18 @@ const rollDice1 = () => (
 )
 
 const add1 = (a, b) => a + b;
+
+
+// setTimeout and setInterval 
+console.log('Hello there!');
+setTimeout(() => {
+  console.log('...are you still there?');
+}, 3000)
+
+console.log('Bye Bye !');
+
+const id = setInterval(() => {
+  console.log(Math.random());
+}, 2000);
+
+// clearInterval(id); // To Stop the Interval
