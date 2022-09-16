@@ -208,3 +208,12 @@ const recentMovies = movies.filter(movie => movie.year > 2000)
 // const goodTitles = goodMovies.map(m => m.title)
 
 movies.filter(movie => movie.score > 80).map(movie => movie.title);
+
+
+// Some & Every Methods
+movies.some(movie => movie.year > 2015)
+
+
+const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 77]
+
+exams.every(score => score >= 75)
