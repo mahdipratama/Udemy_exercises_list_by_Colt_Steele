@@ -332,8 +332,6 @@ const fullNames = [
     last: 'Snape'
   }];
 
-// Write your code here
-
 // const firstNames = fullNames.map(function (orang) {
 //   return orang.first;
 // });
@@ -342,3 +340,20 @@ const firstNames = fullNames.map(orang => orang.first);
 
 console.log(firstNames);
 console.log(typeof firstNames)
+
+
+/*
+Map Practice
+=======================
+Write an arrow function expression called greet.  It should accept a single string argument, representing a person's name.  It should return a greeting string as shown below:
+
+-greet("Hagrid") //"Hey Hagrid!" 
+-greet("Luna") //"Hey Luna!"
+*/
+
+const greet = (person) => {
+  return `Hey ${person}!`;
+};
+
+console.log(greet('Hagrid'));
+console.log(greet('Luna'));
