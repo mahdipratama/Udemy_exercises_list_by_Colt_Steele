@@ -108,3 +108,11 @@ const square = (num) => {
 const rollDice = () => {
   return Math.floor(Math.random() * 6);
 }
+
+// Arrow function Implicit return (only single Expression)
+
+const rollDice1 = () => (
+  Math.floor(Math.random() * 6)
+)
+
+const add1 = (a, b) => a + b;
