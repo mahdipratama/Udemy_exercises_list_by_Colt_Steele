@@ -357,3 +357,17 @@ const greet = (person) => {
 
 console.log(greet('Hagrid'));
 console.log(greet('Luna'));
+
+/*
+Filter Exercise
+=======================
+Write a function called validUserNames that accepts an array of usernames (strings).  It should return a new array, containing only the usernames that are less than 10 characters.
+*/
+
+function validUserNames(usernames) {
+  // your code here
+  const filterArr = usernames.filter(function (names) {
+    return names.length < 10;
+  });
+  return filterArr;
+}
