@@ -245,3 +245,20 @@ const minPrice = prices.reduce((min, price) => {
 const evens = [2, 4, 6, 8];
 evens.reduce((sum, num) => sum + num) //20
 evens.reduce((sum, num) => sum + num, 100) //120
+
+
+// Arrow Function & 'this'
+const person = {
+  firstName: 'Viggo',
+  lastName: 'Mortensen',
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`
+  },
+  shoutName: function () {
+    setTimeout(() => {
+      //keyword 'this' in arrow functions refers to the value of 'this' when the function is created
+      console.log(this);
+      console.log(this.fullName())
+    }, 3000)
+  }
+}
