@@ -47,3 +47,12 @@ console.log(links);
 for (let link of links) {
   console.log(link.href);
 }
+
+const allLinks = document.querySelectorAll('a');
+
+for (let link of links) {
+  link.style.color = 'rgb(0, 108, 134';
+  link.style.textDecorationColor = 'lightpink';
+  link.style.textDecorationStyle = 'wavy'
+}
+
