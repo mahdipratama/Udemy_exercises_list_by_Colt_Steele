@@ -14,7 +14,6 @@
 
 
 // Selecting any type single element
-
 const headingImg = document.querySelector('img')
 console.log(headingImg);
 
@@ -32,15 +31,14 @@ console.log(firstBanner);
 
 
 // Selecting any type all elements
-
 const allP = document.querySelectorAll('p');
 console.log(allP);
 
 const allImg = document.querySelectorAll('img');
 console.log(allImg);
 
-// -selecting all 'a' nested inside of 'p'
 
+// -selecting all 'a' nested inside of 'p'
 const links = document.querySelectorAll('p a')
 console.log(links);
 
@@ -56,3 +54,14 @@ for (let link of links) {
   link.style.textDecorationStyle = 'wavy'
 }
 
+
+// ClassList 
+const h2 = document.querySelector('h2');
+
+h2.classList.add('purple'); // h2 now have a class 'purple'
+h2.classList.add('border'); // h2 now have a class 'border'
+
+h2.classList.remove('border'); // h2 now don't have a class 'border'
+
+h2.classList.contains('border'); // false 
+h2.classList.contains('purple'); // true 
