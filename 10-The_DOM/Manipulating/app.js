@@ -65,3 +65,18 @@ h2.classList.remove('border'); // h2 now don't have a class 'border'
 
 h2.classList.contains('border'); // false 
 h2.classList.contains('purple'); // true 
+
+
+// Traversing Parent/Child/Sibling
+const firstBold = document.querySelector('b');
+console.log(firstBold); // <b>Silkie</b>
+
+const paragraph = firstBold.parentElement;
+console.log(paragraph); // <p>...</p>
+
+const squareImg = document.querySelector('.square');
+
+squareImg.nextElementSibling // navigate to another Images
+
+squareImg.previousElementSibling // navigate to <p>...</p>
+
