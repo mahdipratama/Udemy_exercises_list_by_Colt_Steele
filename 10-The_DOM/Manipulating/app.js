@@ -80,3 +80,19 @@ squareImg.nextElementSibling // navigate to another Images
 
 squareImg.previousElementSibling // navigate to <p>...</p>
 
+
+// AppendChild
+const newH3 = document.createElement('h3');
+newH3.innerText = 'I am New !'
+document.body.appendChild(newH3);
+
+// Append
+const he2 = document.createElement('h2');
+he2.append('Are adorable chickens');
+
+const h1 = document.querySelector('h1');
+h1.insertAdjacentElement('afterend', he2)
+
+const h3 = document.createElement('h3');
+h3.innerText = 'I am h3';
+h1.after(h3);
