@@ -96,3 +96,8 @@ h1.insertAdjacentElement('afterend', he2)
 const h3 = document.createElement('h3');
 h3.innerText = 'I am h3';
 h1.after(h3);
+
+
+// Remove element
+const img = document.querySelector('img');
+img.remove();
